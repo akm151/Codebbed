@@ -67,7 +67,7 @@ a:focus{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: auto;
-	min-height: 710px;	
+	min-height: 400px;	
 	padding-top: 60px;
 	color: #ffffff;
 }
@@ -82,7 +82,7 @@ a:focus{
 	cursor: pointer;
 }
 .content{
-	padding-top: 16%;
+	/*padding-top: 5%;*/
 }
 .header-text.btn{
 	border: 1px solid #ffffff;
