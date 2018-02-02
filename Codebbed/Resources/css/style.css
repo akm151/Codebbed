@@ -602,3 +602,21 @@ nav#footer{
 }
 #footer a:hover{
 	color: #c59a6d;}
+
+/*modifcations start*/
+#whatWeDo {
+    background: url(../img/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+    #whatWeDo .overlay {
+        background: rgba(34, 34, 34, 0.85);
+        height: auto;
+        min-height: 200px;
+        padding: 8% 0;
+        color: #ffffff;
+    }

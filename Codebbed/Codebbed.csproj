@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -137,6 +139,7 @@
     <Content Include="Resources\img\clients\02.png" />
     <Content Include="Resources\img\clients\03.png" />
     <Content Include="Resources\img\clients\04.png" />
+    <Content Include="Resources\img\linkedin.png" />
     <Content Include="Resources\img\logoCodebbed.jpg" />
     <Content Include="Resources\img\logoFavicon-114x114.png" />
     <Content Include="Resources\img\logoFavicon-72x72.png" />
@@ -146,11 +149,22 @@
     <Content Include="Resources\img\portfolio\02.jpg" />
     <Content Include="Resources\img\portfolio\03.jpg" />
     <Content Include="Resources\img\portfolio\04.jpg" />
+    <Content Include="Resources\img\team\001.jpg" />
+    <Content Include="Resources\img\team\002.jpg" />
     <Content Include="Resources\img\team\01.jpg" />
     <Content Include="Resources\img\team\02.jpg" />
+    <Content Include="Resources\img\team\003.jpg" />
     <Content Include="Resources\img\team\03.jpg" />
     <Content Include="Resources\img\team\04.jpg" />
     <EmbeddedResource Include="Resources\js\bootstrap.js" />
+    <Content Include="Resources\img\Techs\asp.net.png" />
+    <Content Include="Resources\img\Techs\csharp.png" />
+    <Content Include="Resources\img\Techs\files-coding-box-sql-512.png" />
+    <Content Include="Resources\img\Techs\html.png" />
+    <Content Include="Resources\img\Techs\JS.png" />
+    <Content Include="Resources\img\Techs\python.png" />
+    <Content Include="Resources\img\Techs\sql.png" />
+    <Content Include="Resources\img\twitter.png" />
     <Content Include="Resources\js\bootstrap.min.js" />
     <Content Include="Resources\js\jasny-bootstrap.min.js" />
     <Content Include="Resources\js\jquery.1.11.1.js" />
