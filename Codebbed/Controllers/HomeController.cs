@@ -28,22 +28,16 @@ namespace Codebbed.Controllers
             mailMessage.Subject = "test email";
             mailMessage.Body = "this is the body of test mail";
 
-            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
-            smtpClient.Credentials = new System.Net.NetworkCredential()
-            {
-                UserName = "codebbed@gmail.com",
-                Password = "test"
-            };
-            smtpClient.EnableSsl = true;
+            SmtpClient smtpClient = new SmtpClient();
             try
-            { 
-            smtpClient.Send(mailMessage);
+            {
+                smtpClient.Send(mailMessage);
             }
             catch (Exception ex)
             {
                 return RedirectToAction("Error", new { message = ex.Message });
             }
-            return Json(new {isSuccess=true, message = "Thanks for Contacting Us.We will get back to you shortly." },JsonRequestBehavior.AllowGet);
+            return Json(new { isSuccess = true, message = "Thanks for Contacting Us.We will get back to you shortly." }, JsonRequestBehavior.AllowGet);
 
         }
     }
