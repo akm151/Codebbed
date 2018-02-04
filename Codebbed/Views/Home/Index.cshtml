@@ -32,6 +32,8 @@
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/css/style.css")">
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/css/responsive.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/css/app.css")">
+
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="@Url.Content("~/Resources/js/modernizr.custom.js")"></script>
@@ -521,9 +523,27 @@
                         </div>
                         <textarea class="form-control" rows="4" placeholder="Message"></textarea>
                         <div class="text-right">
-                            <a href="#" class="btn send-btn">Send</a>
+                            <a id="btnSendMail" class="btn send-btn"   >Send</a>
                         </div>
                     </form>
+                    @*added for mail:start*@
+                    <div class="modal fade" id="popup" role="dialog">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Message</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p id="message"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @*added for mail:end*@
                 </div>
             </div>
         </div>
@@ -564,5 +584,6 @@
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="@Url.Content("~/Resources/js/main.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Resources/js/app.js")"></script>
 </body>
 </html>
