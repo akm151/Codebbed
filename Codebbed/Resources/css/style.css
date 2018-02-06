@@ -72,13 +72,14 @@ a {
     }
 
 #home {
+    /* background: url(../img/bg1.jpg); */
     background: url(../img/bg1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: auto;
-    min-height: 400px;
+    height: 370px;
+    min-height: 350px;
     padding-top: 60px;
     color: #ffffff;
 }
@@ -94,8 +95,18 @@ a {
         cursor: pointer;
     }
 
+    #home .overlay {
+        background: rgba(34, 34, 34, 0.85);
+        height: 370px;
+        max-height: 420px;
+        /* padding: 8% 0; */
+        color: #ffffff;
+        POSITION: relative;
+        top: -60px;
+    }
+
 .content {
-    /*padding-top: 5%;*/
+    padding-top: 5%;
 }
 
 .header-text.btn {
@@ -703,9 +714,9 @@ nav#footer {
         color: #ffffff;
     }
 /*Header Section*/
-ul.clients .navli {   
+ul.clients .navli {
     text-transform: uppercase;
-    font-size: 20px;   
+    font-size: 20px;
 }
 
 /*Social Network styling*/

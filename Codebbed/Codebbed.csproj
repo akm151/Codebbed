@@ -132,7 +132,7 @@
     <Content Include="Resources\css\style.css" />
     <Content Include="Resources\font-awesome-4.2.0\css\font-awesome.css" />
     <Content Include="Resources\font-awesome-4.2.0\css\font-awesome.min.css" />
-    <Content Include="Resources\img\bg1.jpg" />
+    <Content Include="Resources\img\bg001.jpg" />
     <Content Include="Resources\img\bg2.jpg" />
     <Content Include="Resources\img\bg3.jpg" />
     <Content Include="Resources\img\bg4.jpg" />
@@ -166,6 +166,7 @@
     <Content Include="Resources\img\Techs\python.png" />
     <Content Include="Resources\img\Techs\sql.png" />
     <Content Include="Resources\img\twitter.png" />
+    <Content Include="Resources\img\bg1.jpg" />
     <Content Include="Resources\js\app.js" />
     <Content Include="Resources\js\bootstrap.min.js" />
     <Content Include="Resources\js\jasny-bootstrap.min.js" />
