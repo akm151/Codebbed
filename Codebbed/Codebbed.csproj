@@ -122,6 +122,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
     <Content Include="Resources\css\animate.css" />
+    <Content Include="Resources\css\app.css" />
     <Content Include="Resources\css\bootstrap.css" />
     <Content Include="Resources\css\bootstrap.min.css" />
     <Content Include="Resources\css\jasny-bootstrap.min.css" />
@@ -166,6 +167,7 @@
     <Content Include="Resources\img\Techs\sql.png" />
     <Content Include="Resources\img\twitter.png" />
     <Content Include="Resources\img\bg1.jpg" />
+    <Content Include="Resources\js\app.js" />
     <Content Include="Resources\js\bootstrap.min.js" />
     <Content Include="Resources\js\jasny-bootstrap.min.js" />
     <Content Include="Resources\js\jquery.1.11.1.js" />
