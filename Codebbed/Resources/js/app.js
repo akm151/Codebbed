@@ -1,4 +1,13 @@
-﻿$("#btnSendMail").click(function () {
+﻿$(function () {
+    $("#head-title").typed({
+        strings: ["We are developers^1000", "We can get things done!^1000", "24/7 available for hire^1000"],
+        typeSpeed: 100,
+        loop: true,
+        startDelay: 100
+    });
+});
+
+$("#btnSendMail").click(function () {
     debugger;
     $.ajax({
         url: "Home/SendMail", success: function (result) {

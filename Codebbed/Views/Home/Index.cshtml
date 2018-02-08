@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Basic Page Needs
@@ -13,31 +14,16 @@
 
     <!-- Favicons
     ================================================== -->
-
     <link rel="shortcut icon" href="@Url.Content("~/Resources/img/logoFavicon.ico")" type="image/x-icon">
     <link rel="apple-touch-icon" href="@Url.Content("~/Resources/img/logoFavicon.png")">
     <link rel="apple-touch-icon" sizes="72x72" href="@Url.Content("~/Resources/img/logoFavicon-72x72.png")">
     <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/Resources/img/logoFavicon-114x114.png")">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/css/bootstrap.css")">
-    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/font-awesome-4.2.0/css/font-awesome.css")">
-    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/css/jasny-bootstrap.min.css")">
-    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/css/animate.css")">
 
-    <!-- Slider
-    ================================================== -->
-    <link href="@Url.Content("~/Resources/css/owl.carousel.css")" rel="stylesheet" media="screen">
-    <link href="@Url.Content("~/Resources/css/owl.theme.css")" rel="stylesheet" media="screen">
-    <!-- Stylesheet
-    ================================================== -->
-    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/css/style.css")">
-    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Resources/css/responsive.css")">
-
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")">
-
-    <script type="text/javascript" src="@Url.Content("~/Resources/js/modernizr.custom.js")"></script>
+    @* Bundled scripts and css *@
+    @System.Web.Optimization.Styles.Render("~/bundles/css")
+    @System.Web.Optimization.Scripts.Render("~/bundles/js")
+    
+  
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -396,8 +382,10 @@
                         <h2>About Us</h2>
                         <hr>
                     </div>
-                    <p>We are tech enthusiasts, with a knack of learning while exploring and also earning while at it.
-                    We create, innovate, design, code and deliver solutions best suited for your businesses. we love taking up challenges and also see through them to unroll our potential.</p>
+                    <p>
+                        We are tech enthusiasts, with a knack of learning while exploring and also earning while at it.
+                        We create, innovate, design, code and deliver solutions best suited for your businesses. we love taking up challenges and also see through them to unroll our potential.
+                    </p>
                 </div>
             </div>
             <div class="space"></div>
@@ -521,25 +509,49 @@
                     <form autocomplete="off">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name">
-                                <input type="text" class="form-control" placeholder="Phone No.">
+                                <input id="txtName"  type="text" class="form-control" placeholder="Your Name">
+                                <input id="txtPhoneNo" type="text" class="form-control" placeholder="Phone No.">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Email">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input id="txtEmailID" type="text" class="form-control" placeholder="Email">
+                                <input id="txtSubject" type="text" class="form-control" placeholder="Subject">
                             </div>
                         </div>
-                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        <textarea id="txtMessage" class="form-control" rows="4" placeholder="Message"></textarea>
                         <div class="text-right">
-                            <a href="#" class="btn send-btn">Send</a>
+                            <a id="btnSendMail" class="btn send-btn">Send</a>
                         </div>
                     </form>
+                   
                 </div>
             </div>
         </div>
     </div>
 
+    @*added for mail:start*@
+    <div class="modal fade" id="popup" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Message</h4>
 
+                </div>
+                <div class="modal-body">
+                    <p id="message"></p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    @*added for mail:end*@
     <nav id="footer">
         <div class="container">
             <div class="socialLinks">
@@ -566,33 +578,7 @@
                     <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
                 </div>*@
         </div>-->
-    </nav>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="@Url.Content("~/Resources/js/jquery.1.11.1.js")"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="@Url.Content("~/Resources/js/bootstrap.js")"></script>
-    <script type="text/javascript" src="@Url.Content("~/Resources/js/SmoothScroll.js")"></script>
-    <script type="text/javascript" src="@Url.Content("~/Resources/js/jasny-bootstrap.min.js")"></script>
-    <script src="@Url.Content("~/Resources/js/owl.carousel.js")"></script>
-    <script src="@Url.Content("~/Resources/js/typed.js")"></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-
-
-    <script>
-        $(function () {
-            $("#head-title").typed({
-                strings: ["We are developers^1000", "We can get things done!^1000", "24/7 available for hire^1000"],
-                typeSpeed: 100,
-                loop: true,
-                startDelay: 100
-            });
-        });
-    </script>
-    <!-- Javascripts
-    ================================================== -->
-    <script type="text/javascript" src="@Url.Content("~/Resources/js/main.js")"></script>
-</body>
+         </nav>
+        
+    </body>
 </html>
