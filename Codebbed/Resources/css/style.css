@@ -794,6 +794,11 @@ ul.clients .navli {
 #stickyHead {
     background-color: white;
 }
+
 #works .portfolio-item .hover-bg {
-    height: 240px;
+    height: 118px;
+}
+
+#works .hover-bg:hover .hover-text {
+    opacity: 0.3;
 }
