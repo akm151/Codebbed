@@ -34,8 +34,10 @@
             var sticky = $('#stickyHead')[0].offsetTop;
             if (window.pageYOffset > sticky) {
                 $('#stickyHead').addClass("sticky");
+                $('#stickyHead').css("background-color", "#EFEFEF");
             } else {
                 $('#stickyHead').removeClass("sticky");
+                $('#stickyHead').css("background-color", "white");
             }
         };
     </script>

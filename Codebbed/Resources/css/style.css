@@ -374,7 +374,7 @@ a.btn.go-to-btn {
 }
 
 .portfolio-item .hover-bg {
-    height: 280px;
+    height: inherit;
     overflow: hidden;
     position: relative;
 }
@@ -788,8 +788,12 @@ ul.clients .navli {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index:1000;
+    z-index: 1000;
 }
-#stickyHead{
-    background-color:white;
+
+#stickyHead {
+    background-color: white;
+}
+#works .portfolio-item .hover-bg {
+    height: 240px;
 }

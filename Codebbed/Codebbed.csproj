@@ -171,13 +171,17 @@
     <Content Include="Resources\img\team\03.jpg" />
     <Content Include="Resources\img\team\04.jpg" />
     <EmbeddedResource Include="Resources\js\bootstrap.js" />
+    <Content Include="Resources\img\Techs\angular.png" />
     <Content Include="Resources\img\Techs\asp.net.png" />
     <Content Include="Resources\img\Techs\csharp.png" />
     <Content Include="Resources\img\Techs\files-coding-box-sql-512.png" />
     <Content Include="Resources\img\Techs\html.png" />
+    <Content Include="Resources\img\Techs\jquery.png" />
     <Content Include="Resources\img\Techs\JS.png" />
+    <Content Include="Resources\img\Techs\mvc.png" />
     <Content Include="Resources\img\Techs\python.png" />
     <Content Include="Resources\img\Techs\sql.png" />
+    <Content Include="Resources\img\Techs\typescript.png" />
     <Content Include="Resources\img\twitter.png" />
     <Content Include="Resources\img\bg1.jpg" />
     <Content Include="Resources\js\app.js" />
