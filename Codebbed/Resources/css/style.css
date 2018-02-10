@@ -782,3 +782,14 @@ ul.clients .navli {
     .stickySocialBottom .socialLinks {
         font-size: 15px;
     }
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1000;
+}
+#stickyHead{
+    background-color:white;
+}
