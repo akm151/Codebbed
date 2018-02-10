@@ -90,7 +90,7 @@ a {
         border-radius: 2px;
         padding: 7px 5px;
         position: relative;
-        margin-top: 100px;
+        margin-top: 50px;
         color: #ffffff;
         cursor: pointer;
     }
@@ -110,8 +110,8 @@ a {
 }
 
 .header-text.btn {
-    border: 1px solid #ffffff;
-    border-radius: 0;
+    /*border: 1px solid #ffffff;*/
+    /*border-radius: 0;*/
     padding: 10px 30px;
     height: 100px;
 }
@@ -501,9 +501,10 @@ ul, ol {
 
 .team {
     border: 1px solid #c3c3c3;
-    padding: 70px 20px;
+    /*padding: 70px 20px;*/
+    padding: 48px 20px;
     text-align: center;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
     transition: all 0.8s;
     max-height: 340px;
     margin-bottom: 30px;
@@ -531,9 +532,21 @@ ul, ol {
         border: 1px solid #222;
     }
 
+        .team:hover .small {
+            opacity: 1;
+        }
+
     .team img {
-        width: 80px;
+        width: 120px;
         margin: 0 auto;
+    }
+
+    .team .a {
+        opacity: 0.7;
+    }
+
+    .team .small {
+        opacity: 0.7;
     }
 
 #testimonials {
@@ -749,20 +762,26 @@ ul.clients .navli {
     color: white;
 }
 
-.socialLinks {
-    font-size: 50px;
+.fa-google-plus {
+    background: #d34836;
+    color: white;
 }
+
+/*.socialLinks {
+    font-size: 20px;
+}*/
 
 .stickySocial {
     list-style: none;
-    top: 40%;
+    top: 27%;
     left: 0px;
     position: fixed;
     z-index: 1000;
 }
 
     .stickySocial .fa {
-        margin: 0px 0px;
+        margin: 3px 0px;
+        width: 65px;
     }
 
 .stickySocialBottom {
@@ -780,8 +799,12 @@ ul.clients .navli {
     }
 
     .stickySocialBottom .socialLinks {
-        font-size: 15px;
+        font-size: 40px;
     }
+
+nav#footer .socialLinks {
+    font-size: 40px;
+}
 
 
 .sticky {
@@ -796,7 +819,7 @@ ul.clients .navli {
 }
 
 #works .portfolio-item .hover-bg {
-    height: 118px;
+    height: 160px;
 }
 
 #works .hover-bg:hover .hover-text {
