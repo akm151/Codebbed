@@ -6,12 +6,9 @@
         startDelay: 100
     });
 });
-
 $("#btnSendMail").click(function () {
-    debugger;
     $.ajax({
         url: "Home/SendMail", success: function (result) {
-            debugger;
             if (result && result.isSuccess) {
                 //$("#popup").show();
                 $('#popup').modal('show');
