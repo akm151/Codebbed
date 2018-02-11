@@ -171,8 +171,8 @@
     <Content Include="Resources\img\team\001.jpg" />
     <Content Include="Resources\img\team\002.jpg" />
     <Content Include="Resources\img\team\01.jpg" />
-    <Content Include="Resources\img\team\02.jpg" />
     <Content Include="Resources\img\team\003.jpg" />
+    <Content Include="Resources\img\team\02.jpg" />
     <Content Include="Resources\img\team\03.jpg" />
     <Content Include="Resources\img\team\04.jpg" />
     <EmbeddedResource Include="Resources\js\bootstrap.js" />

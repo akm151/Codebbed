@@ -22,7 +22,7 @@ $("#btnSendMail").click(function () {
     });
 });
 $(document).ready(function () {
-    var owl = $('#testimonial');
+    var owl = $('.testimonial');
     owl.owlCarousel({
         items: 1,
         loop: true,
@@ -32,3 +32,9 @@ $(document).ready(function () {
         dots: true,
     });
 })
+function fnFacebookClick() {
+    window.open('http://www.facebook.com/sharer.php?u=https://www.facebook.com/Codebbed-849208365280211/', 'popwin', 'width=640, height=480');
+}
+function fnLinkedClick() {
+    window.open('https://www.linkedin.com/shareArticle?url=https://www.linkedin.com/company/codebbed', 'popwin', 'width=640, height=480');
+}
