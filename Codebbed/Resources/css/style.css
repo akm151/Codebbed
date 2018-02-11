@@ -558,13 +558,39 @@ ul, ol {
     text-align: center;
 }
 
-    #testimonials .overlay {
+#howwework {
+    background: url(../img/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    text-align: center;
+}
+
+    #howwework .overlay {
         background: rgba(34, 34, 34, 0.85);
         height: auto;
         min-height: 200px;
-        padding: 5% 0;
+        padding: 2% 0;
         color: #ffffff;
     }
+
+    #howwework .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        max-width: 100%;
+        height: 431px;
+        width: 921px;
+    }
+
+
+
+#testimonials .overlay {
+    background: rgba(34, 34, 34, 0.85);
+    height: auto;
+    min-height: 200px;
+    padding: 5% 0;
+    color: #ffffff;
+}
 
 .owl-theme .owl-controls .owl-page span {
     display: block;
@@ -827,11 +853,13 @@ nav#footer .socialLinks {
     height: 80%;
     width: 80%
 }
+
 #works .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     display: block;
     max-width: 80%;
     height: 80%;
 }
+
 #works .hover-bg .hover-text {
     position: absolute;
     text-align: center;
@@ -844,3 +872,24 @@ nav#footer .socialLinks {
     opacity: 0;
     transition: all 0.5s;
 }
+
+
+.phases {
+    position: absolute;
+    top: 0px;
+    background-color: gold;
+    color: black;
+    padding: 20px;
+    opacity: 0.9;
+    font-size: x-large;
+}
+/*#howwework .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    
+
+}*/

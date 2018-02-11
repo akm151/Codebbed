@@ -17,10 +17,28 @@ $("#btnSendMail").click(function () {
                 $('#popup').modal('show');
                 $("#message").text(result.message);
             }
-            
+
             //$("#div1").html(result);
         }, error: function (result) {
             alert("Error");
         }
     });
 });
+$(document).ready(function () {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoPlay: true,
+        
+    });
+    //autoplayTimeout: 1000,
+    //    autoplayHoverPause: true
+    //$('.play').on('click', function () {
+    //    owl.trigger('play.owl.autoplay', [1000])
+    //})
+    //$('.stop').on('click', function () {
+    //    owl.trigger('stop.owl.autoplay')
+    //})
+})
