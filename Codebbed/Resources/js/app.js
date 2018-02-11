@@ -7,29 +7,29 @@
     });
 });
 $(function () {
-$("#btnSendMail").click(function () {
-    $.ajax({
-        url: "Home/SendMail", success: function (result) {
-            if (result && result.isSuccess) {
-                //$("#popup").show();
-                $('#popup').modal('show');
-                $("#message").text(result.message);
-            }
+    $("#btnSendMail").click(function () {
+        $.ajax({
+            url: "Home/SendMail", success: function (result) {
+                if (result && result.isSuccess) {
+                    //$("#popup").show();
+                    $('#popup').modal('show');
+                    $("#message").text(result.message);
+                }
 
-            //$("#div1").html(result);
-        }, error: function (result) {
-            alert("Error");
-        }
+                //$("#div1").html(result);
+            }, error: function (result) {
+                alert("Error");
+            }
         });
-        });
- });
+    });
+});
 $(document).ready(function () {
     var owl = $('.testimonial');
     owl.owlCarousel({
         items: 1,
         loop: true,
         margin: 100,
-            autoplay: true,
+        autoplay: true,
         autoplayTimeout: 3000,
         dots: true,
     });
