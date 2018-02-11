@@ -6,21 +6,24 @@
         startDelay: 100
     });
 });
-
 $("#btnSendMail").click(function () {
-    debugger;
     $.ajax({
         url: "Home/SendMail", success: function (result) {
-            debugger;
             if (result && result.isSuccess) {
                 //$("#popup").show();
                 $('#popup').modal('show');
                 $("#message").text(result.message);
             }
-            
+
             //$("#div1").html(result);
         }, error: function (result) {
             alert("Error");
         }
     });
 });
+function fnFacebookClick() {
+    window.open('http://www.facebook.com/sharer.php?u=https://www.facebook.com/Codebbed-849208365280211/', 'popwin', 'width=640, height=480');
+}
+function fnLinkedClick() {
+    window.open('https://www.linkedin.com/shareArticle?url=https://www.linkedin.com/company/codebbed', 'popwin', 'width=640, height=480');
+}
