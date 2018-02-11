@@ -6,6 +6,7 @@
         startDelay: 100
     });
 });
+$(function () {
 $("#btnSendMail").click(function () {
     $.ajax({
         url: "Home/SendMail", success: function (result) {
@@ -19,15 +20,16 @@ $("#btnSendMail").click(function () {
         }, error: function (result) {
             alert("Error");
         }
-    });
-});
+        });
+        });
+ });
 $(document).ready(function () {
     var owl = $('.testimonial');
     owl.owlCarousel({
         items: 1,
         loop: true,
         margin: 100,
-        autoplay: true,
+            autoplay: true,
         autoplayTimeout: 3000,
         dots: true,
     });
