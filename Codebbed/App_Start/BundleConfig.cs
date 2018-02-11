@@ -36,6 +36,7 @@ namespace Codebbed
             jsBundle.Include("~/Resources/js/SmoothScroll.js");
             jsBundle.Include("~/Resources/js/jasny-bootstrap.min.js");
             jsBundle.Include("~/Resources/js/owl.carousel.js");
+            jsBundle.Include("~/Resources/js/owl.autoplay.js");
             jsBundle.Include("~/Resources/js/typed.js");
             jsBundle.Include("~/Resources/js/widgets.js");
             jsBundle.Include("~/Resources/js/in.js");

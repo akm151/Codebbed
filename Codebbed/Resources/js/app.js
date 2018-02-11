@@ -22,20 +22,13 @@ $("#btnSendMail").click(function () {
     });
 });
 $(document).ready(function () {
-    var owl = $('.owl-carousel');
+    var owl = $('#testimonial');
     owl.owlCarousel({
-        items: 4,
+        items: 1,
         loop: true,
-        margin: 10,
-        autoPlay: true,
-        
+        margin: 100,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        dots: true,
     });
-    //autoplayTimeout: 1000,
-    //    autoplayHoverPause: true
-    //$('.play').on('click', function () {
-    //    owl.trigger('play.owl.autoplay', [1000])
-    //})
-    //$('.stop').on('click', function () {
-    //    owl.trigger('stop.owl.autoplay')
-    //})
 })
