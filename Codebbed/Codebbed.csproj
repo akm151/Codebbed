@@ -163,10 +163,11 @@
     <Content Include="Resources\img\logoFavicon-72x72.png" />
     <Content Include="Resources\img\logoFavicon.ico" />
     <Content Include="Resources\img\logoFavicon.png" />
-    <Content Include="Resources\img\portfolio\01.jpg" />
-    <Content Include="Resources\img\portfolio\02.jpg" />
-    <Content Include="Resources\img\portfolio\03.jpg" />
-    <Content Include="Resources\img\portfolio\04.jpg" />
+    <Content Include="Resources\img\portfolio\01.png" />
+    <Content Include="Resources\img\portfolio\02.png" />
+    <Content Include="Resources\img\portfolio\03.png" />
+    <Content Include="Resources\img\portfolio\04.png" />
+    <Content Include="Resources\img\portfolio\05.png" />
     <Content Include="Resources\img\team\001.jpg" />
     <Content Include="Resources\img\team\002.jpg" />
     <Content Include="Resources\img\team\01.jpg" />
