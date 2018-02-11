@@ -172,9 +172,10 @@
     <Content Include="Resources\img\team\04.jpg" />
     <EmbeddedResource Include="Resources\js\bootstrap.js" />
     <Content Include="Resources\img\Techs\angular.png" />
-    <Content Include="Resources\img\Techs\asp.net.png" />
+    <Content Include="Resources\img\Techs\bootstrap.png" />
     <Content Include="Resources\img\Techs\csharp.png" />
-    <Content Include="Resources\img\Techs\files-coding-box-sql-512.png" />
+    <Content Include="Resources\img\Techs\django.png" />
+    <Content Include="Resources\img\Techs\flask.png" />
     <Content Include="Resources\img\Techs\html.png" />
     <Content Include="Resources\img\Techs\jquery.png" />
     <Content Include="Resources\img\Techs\JS.png" />
