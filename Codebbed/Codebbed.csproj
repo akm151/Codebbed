@@ -198,6 +198,7 @@
     <Content Include="Resources\js\jquery.min.js" />
     <Content Include="Resources\js\main.js" />
     <Content Include="Resources\js\modernizr.custom.js" />
+    <Content Include="Resources\js\owl.autoplay.js" />
     <Content Include="Resources\js\owl.carousel.js" />
     <Content Include="Resources\js\SmoothScroll.js" />
     <Content Include="Resources\js\typed.js" />

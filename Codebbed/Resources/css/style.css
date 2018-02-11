@@ -275,8 +275,7 @@ nav#menu span.fa.fa-bars:hover {
 
 #meet-us,
 #services,
-#works,
-#about-us {
+#works {
     padding: 60px 0;
 }
 
@@ -505,10 +504,11 @@ ul, ol {
     /*padding: 70px 20px;*/
     padding: 48px 20px;
     text-align: center;
-    /*opacity: 0.7;*/
+    opacity: 0.95;
     transition: all 0.8s;
     max-height: 340px;
     margin-bottom: 30px;
+    background-color:white;
 }
 
     .team:hover.hire,
@@ -885,16 +885,17 @@ nav#footer .socialLinks {
     opacity: 0.9;
     font-size: x-large;
 }
-/*#howwework .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    
 
-}*/
+#about-us {
+    background: url(../img/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    text-align: center;
+}
+
+
 
 #ourProjects {
     background: url(../img/bg4.jpg);
