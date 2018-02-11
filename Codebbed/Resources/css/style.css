@@ -824,4 +824,23 @@ nav#footer .socialLinks {
 
 #works .hover-bg:hover .hover-text {
     opacity: 0.3;
+    height: 80%;
+    width: 80%
+}
+#works .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 80%;
+    height: 80%;
+}
+#works .hover-bg .hover-text {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.66);
+    padding: 30% 0;
+    height: 80%;
+    width: 80%;
+    opacity: 0;
+    transition: all 0.5s;
 }
