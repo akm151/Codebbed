@@ -8,17 +8,25 @@
 });
 $(function () {
     $("#btnSendMail").click(function () {
+        var data = $("form").serializeArray();
+        console.log(data);
+        toggleLoader();
         $.ajax({
-            url: "Home/SendMail", success: function (result) {
+            type:"GET",
+            data:data,
+            url: "Home/SendMail",
+            success: function (result) {
+                toggleLoader();
                 if (result && result.isSuccess) {
-                    //$("#popup").show();
-                    $('#popup').modal('show');
-                    $("#message").text(result.message);
+                    popupShow(result.Message)
                 }
-
-                //$("#div1").html(result);
-            }, error: function (result) {
-                alert("Error");
+                else {
+                    popupShow(result.Message)
+                }
+            },
+            error: function (result) {
+                toggleLoader();
+                popupShow(result.Message)
             }
         });
     });
@@ -39,4 +47,20 @@ function fnFacebookClick() {
 }
 function fnLinkedClick() {
     window.open('https://www.linkedin.com/shareArticle?url=https://www.linkedin.com/company/codebbed', 'popwin', 'width=640, height=480');
+}
+
+function popupShow( message) {
+    $('#popup').modal('show');
+    $("#message").text(message);
+}
+
+function toggleLoader() {
+    if ($("html").hasClass("hide-scroll")) {
+        $("#overlay").hide();
+        $("html").removeClass("hide-scroll");
+    }
+    else {
+        $("#overlay").show();
+        $("html").addClass("hide-scroll");
+    }   
 }
