@@ -25,6 +25,13 @@ namespace Codebbed
             cssBundle.Include("~/Resources/css/app.css");
             cssBundle.Include("~/Resources/css/montserrat.css");
             cssBundle.Include("~/Resources/css/font-awesome.min.css");
+            cssBundle.Include("~/Resources/fonts/fontawesome-webfont.ttf");
+            cssBundle.Include("~/Resources/fonts/fontawesome-webfont.woff");
+            cssBundle.Include("~/Resources/fonts/fontawesome-webfont.woff2");
+            cssBundle.Include("~/Resources/fonts/glyphicons-halflings-regular.eot");
+            cssBundle.Include("~/Resources/fonts/glyphicons-halflings-regular.svg");
+            cssBundle.Include("~/Resources/fonts/glyphicons-halflings-regular.ttf");
+            cssBundle.Include("~/Resources/fonts/glyphicons-halflings-regular.woff");
 
             bundles.Add(cssBundle);
 
@@ -45,20 +52,20 @@ namespace Codebbed
 
             bundles.Add(jsBundle);
 
-        //    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        //<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        //<script type="text/javascript" src="@Url.Content("~/Resources/js/jquery.1.11.1.js")"></script>
-        //<!-- Include all compiled plugins (below), or include individual files as needed -->
-        //<script type="text/javascript" src="@Url.Content("~/Resources/js/bootstrap.js")"></script>
-        //<script type="text/javascript" src="@Url.Content("~/Resources/js/SmoothScroll.js")"></script>
-        //<script type="text/javascript" src="@Url.Content("~/Resources/js/jasny-bootstrap.min.js")"></script>
-        //<script src="@Url.Content("~/Resources/js/owl.carousel.js")"></script>
-        //<script src="@Url.Content("~/Resources/js/typed.js")"></script>
-        //<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        //<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+            //    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            //<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            //<script type="text/javascript" src="@Url.Content("~/Resources/js/jquery.1.11.1.js")"></script>
+            //<!-- Include all compiled plugins (below), or include individual files as needed -->
+            //<script type="text/javascript" src="@Url.Content("~/Resources/js/bootstrap.js")"></script>
+            //<script type="text/javascript" src="@Url.Content("~/Resources/js/SmoothScroll.js")"></script>
+            //<script type="text/javascript" src="@Url.Content("~/Resources/js/jasny-bootstrap.min.js")"></script>
+            //<script src="@Url.Content("~/Resources/js/owl.carousel.js")"></script>
+            //<script src="@Url.Content("~/Resources/js/typed.js")"></script>
+            //<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            //<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 
-        //    <script type="text/javascript" src="@Url.Content("~/Resources/js/main.js")"></script>
-        //<script type="text/javascript" src="@Url.Content("~/Resources/js/app.js")"></script>
+            //    <script type="text/javascript" src="@Url.Content("~/Resources/js/main.js")"></script>
+            //<script type="text/javascript" src="@Url.Content("~/Resources/js/app.js")"></script>
 
 
             //         <!-- Bootstrap -->
