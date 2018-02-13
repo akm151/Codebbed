@@ -25,21 +25,16 @@ namespace Codebbed
             cssBundle.Include("~/Resources/css/app.css");
             cssBundle.Include("~/Resources/css/montserrat.css");
             cssBundle.Include("~/Resources/css/font-awesome.min.css");
-            cssBundle.Include("~/Resources/fonts/fontawesome-webfont.ttf");
-            cssBundle.Include("~/Resources/fonts/fontawesome-webfont.woff");
-            cssBundle.Include("~/Resources/fonts/fontawesome-webfont.woff2");
-            cssBundle.Include("~/Resources/fonts/glyphicons-halflings-regular.eot");
-            cssBundle.Include("~/Resources/fonts/glyphicons-halflings-regular.svg");
-            cssBundle.Include("~/Resources/fonts/glyphicons-halflings-regular.ttf");
-            cssBundle.Include("~/Resources/fonts/glyphicons-halflings-regular.woff");
+            
 
             bundles.Add(cssBundle);
 
-            Bundle jsBundle = new StyleBundle("~/bundles/js");
+            Bundle jsBundle = new ScriptBundle("~/bundles/js");
             jsBundle.Include("~/Resources/js/modernizr.custom.js");
             jsBundle.Include("~/Resources/js/jquery.min.js");
             jsBundle.Include("~/Resources/js/jquery.1.11.1.js");
             jsBundle.Include("~/Resources/js/bootstrap.js");
+            jsBundle.Include("~/Resources/js/bootstrap.min.js");
             jsBundle.Include("~/Resources/js/SmoothScroll.js");
             jsBundle.Include("~/Resources/js/jasny-bootstrap.min.js");
             jsBundle.Include("~/Resources/js/owl.carousel.js");

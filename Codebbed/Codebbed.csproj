@@ -266,6 +266,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\PublishCodebbed.pubxml" />
   </ItemGroup>
   <PropertyGroup>
