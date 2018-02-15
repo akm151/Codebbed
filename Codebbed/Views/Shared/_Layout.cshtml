@@ -78,17 +78,22 @@
         <img src="@Url.Content("~/Resources/img/logoCodebbed.jpg")">
     </div>
     <!-- Header Setion-->
-    <div class="navbar" id="stickyHead">
-        <ul id="menu" class="nav clients text-center">
-            <li id="liHome" class="navli"><a href="">Home</a></li>
-            <li id="liAboutUs" class="navli"><a href="#about-us">About Us</a></li>
-            <li id="liContactUs" class="navli"><a href="#contact">Contact Us</a></li>
-            <li id="liServices" class="navli"><a href="#services">Our Services</a></li>
-        </ul>
-    </div>
+    <nav class="navbar" id="stickyHead">
+        <div class="col-md-12">
+            <div class="row">
+                <ul id="menu" class="col-md-12 col-sm-8 nav clients text-center">
+                    <li id="liHome" class="col-md-3 col-sm-2 navli"><a href="">Home</a></li>
+                    <li id="liServices" class="col-md-3 col-sm-2 navli"><a href="#services">Services</a></li>
+                    <li id="liAboutUs" class="col-md-3 col-sm-2 navli"><a href="#about-us">About Us</a></li>
+                    <li id="liContactUs" class="col-md-3 col-sm-2 navli"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="stickySocial">
-        <div class="socialLinks">
+        <i id="toggleSideBar" class="fa fa-share-alt" onclick="fnToggleSideBar()"></i>
+        <div class="socialLinks" id="socialLinksSideBar" style="display:none">
             @*Adding social network links*@
             @*<h2>Style Social Media Buttons</h2>*@
             <ul>
@@ -99,6 +104,7 @@
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="fa fa-google-plus"></a>
                 </li>
                 <li><a href="#" onclick="fnLinkedClick()" class="fa fa-linkedin"></a></li>
+                <li><a href="mailto:?subject=Codebbed | &body=Hi, %0A%0ACheck this out! %0A%0A www.codebbed.com" class="fa fa-envelope" onclick=""></a></li>
             </ul>
         </div>
     </div>
@@ -114,8 +120,10 @@
                 <a href="https://twitter.com/codebbed/" target="_blank" class="fa fa-twitter"></a>
                 <a href="https://plus.google.com/109815279646865138652" target="_blank" class="fa fa-google-plus"></a>
                 <a href="https://www.linkedin.com/company/codebbed/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="mailto:codebbed@gmail.com?subject=Codebbed" class="fa fa-envelope" onclick=""></a>
             </div>
         </div>
+
         <!--<div class
             </div>
 

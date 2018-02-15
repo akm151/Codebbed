@@ -12,8 +12,8 @@ $(function () {
         console.log(data);
         toggleLoader();
         $.ajax({
-            type:"GET",
-            data:data,
+            type: "GET",
+            data: data,
             url: "Home/SendMail",
             success: function (result) {
                 toggleLoader();
@@ -49,7 +49,7 @@ function fnLinkedClick() {
     window.open('https://www.linkedin.com/shareArticle?url=https://www.linkedin.com/company/codebbed', 'popwin', 'width=640, height=480');
 }
 
-function popupShow( message) {
+function popupShow(message) {
     $('#popup').modal('show');
     $("#message").text(message);
 }
@@ -62,5 +62,26 @@ function toggleLoader() {
     else {
         $("#overlay").show();
         $("html").addClass("hide-scroll");
-    }   
+    }
+}
+
+function fnToggleSideBar() {
+    //debugger;
+    //if ($('#toggleSideBar').hasClass('fa fa-angle-double-left')) {
+    //    $('#toggleSideBar').removeClass('fa fa-angle-double-left');
+    //    $('#toggleSideBar').addClass('fa fa-angle-double-right');
+    //    $('#socialLinksSideBar').css('display', 'none');
+    //}
+    //else {
+    //    $('#toggleSideBar').removeClass('fa fa-angle-double-right');
+    //    $('#toggleSideBar').addClass('fa fa-angle-double-left');
+    //    $('#socialLinksSideBar').css('display', 'block');
+    //}
+    if ($('#socialLinksSideBar').css('display') == 'block') {
+        $('#socialLinksSideBar').css('display', 'none');
+    }
+    else {
+
+        $('#socialLinksSideBar').css('display', 'block');
+    }
 }
