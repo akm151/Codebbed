@@ -74,7 +74,7 @@ a {
 
 #home {
     /* background: url(../img/bg1.jpg); */
-    background: url(../Resources/img/bg1.jpg);
+    background: url(../img/bg1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -553,7 +553,7 @@ ul, ol {
     }
 
 #testimonials {
-    background: url(../Resources/img/bg4.jpg);
+    background: url(../img/bg4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -562,7 +562,7 @@ ul, ol {
 }
 
 #howwework {
-    background: url(../Resources/img/bg4.jpg);
+    background: url(../img/bg4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -894,7 +894,7 @@ nav#footer .socialLinks {
 }
 
 #about-us {
-    background: url(../Resources/img/bg4.jpg);
+    background: url(../img/bg4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -911,7 +911,7 @@ nav#footer .socialLinks {
     }
 
 #ourProjects {
-    background: url(../Resources/img/bg4.jpg);
+    background: url(../img/bg4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
