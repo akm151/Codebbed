@@ -8,7 +8,6 @@ body, html {
     overflow-y: auto;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-  
 }
 
 @media (min-width: 1200px) {
@@ -949,4 +948,9 @@ nav#footer .socialLinks {
 
 .nav > li > a {
     padding: 2% 2%;
+}
+
+.navbar-default {
+    background-color: white;
+    border: none;
 }

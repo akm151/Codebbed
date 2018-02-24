@@ -78,19 +78,43 @@
         <img src="@Url.Content("~/Resources/img/logoCodebbed.jpg")">
     </div>
     <!-- Header Setion-->
-    <nav class="navbar" id="stickyHead">
-        <div class="col-md-12">
-            <div class="row">
-                <ul id="menu" class="col-md-12 col-sm-8 nav clients text-center">
-                    <li id="liHome" class="col-md-3 col-sm-2 navli"><a href="">Home</a></li>
-                    <li id="liServices" class="col-md-3 col-sm-2 navli"><a href="#services">Services</a></li>
-                    <li id="liAboutUs" class="col-md-3 col-sm-2 navli"><a href="#about-us">About Us</a></li>
-                    <li id="liContactUs" class="col-md-3 col-sm-2 navli"><a href="#contact">Contact Us</a></li>
+    @*<nav class="navbar" id="stickyHead">
+            <div class="col-md-12">
+                <div class="row">
+                    <ul id="menu" class="col-md-12 col-xs-12 nav clients text-center">
+                        <li id="liHome" class="col-md-3 col-xs-3 navli"><a href="">Home</a></li>
+                        <li id="liServices" class="col-md-3 col-xs-3 navli"><a href="#services">Services</a></li>
+                        <li id="liAboutUs" class="col-md-3 col-xs-3 navli"><a href="#about-us">About Us</a></li>
+                        <li id="liContactUs" class="col-md-3 col-xs-3 navli"><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>*@
+
+    <nav class="navbar navbar-default"  id="stickyHead">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*<a class="navbar-brand" href="#">Brand</a>*@
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="menu" class="nav navbar-nav clients text-center">
+                    <li class="navli"><a href="#">Home</a></li>
+                    <li class="navli"><a href="#">Services</a></li>
+                    <li class="navli"><a href="#">About us</a></li>
+                    <li class="navli"><a href="#">Contact us</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
 
+    </nav>
     <div class="stickySocial">
         <i id="toggleSideBar" class="fa fa-share-alt" onclick="fnToggleSideBar()"></i>
         <div class="socialLinks" id="socialLinksSideBar" style="display:none">
