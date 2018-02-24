@@ -10,16 +10,16 @@ namespace Codebbed.Models
     public class ContactUs
     {
         [Required]
-        [RegularExpression(@"^[A-Za-z]+$")]
+        [RegularExpression(@"^[A-Za-z ]+$")]
         public string Name { get; set; }
         [Required]
         [EmailAddress]
         public string Email { get; set; }
-        [Required]
+        //[Required]
         [Phone]
         public string PhoneNo { get; set; }
-        [Required]
-        public string Subject { get; set; }
+        //[Required]
+        //public string Subject { get; set; }
         [Required]
         public string Message { get; set; }
     }

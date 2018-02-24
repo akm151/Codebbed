@@ -11,6 +11,9 @@ namespace Codebbed
 
         public static void RegisterBundles(BundleCollection bundles)
         {
+
+            BundleTable.EnableOptimizations = true;
+            //EnableOptimization
             bundles.UseCdn = true;
 
             Bundle cssBundle = new StyleBundle("~/bundles/css");
@@ -20,11 +23,11 @@ namespace Codebbed
             cssBundle.Include("~/Resources/css/animate.css");
             cssBundle.Include("~/Resources/css/owl.carousel.css");
             cssBundle.Include("~/Resources/css/owl.theme.css");
-            cssBundle.Include("~/Resources/css/style.css");
+            cssBundle.Include("~/Resources/css/style.css",new CssRewriteUrlTransform());
             cssBundle.Include("~/Resources/css/responsive.css");
             cssBundle.Include("~/Resources/css/app.css");
             cssBundle.Include("~/Resources/css/montserrat.css");
-            cssBundle.Include("~/Resources/css/font-awesome.min.css");
+            cssBundle.Include("~/Resources/css/font-awesome.min.css",new CssRewriteUrlTransform());
             
 
             bundles.Add(cssBundle);

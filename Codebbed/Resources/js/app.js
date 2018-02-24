@@ -8,25 +8,27 @@
 });
 $(function () {
     $("#btnSendMail").click(function () {
-        var data = $("form").serializeArray();
-        console.log(data);
+        var data = JSON.stringify($("form").serializeObject());
+        //console.log(data);
         toggleLoader();
         $.ajax({
-            type: "GET",
+            type: "POST",
             data: data,
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
             url: "Home/SendMail",
             success: function (result) {
                 toggleLoader();
-                if (result && result.isSuccess) {
-                    popupShow(result.Message)
-                }
-                else {
-                    popupShow(result.Message)
+                if (result && result.Message) {
+                        popupShow(result.Message)
+                } else {
+                    popupShow("Some error occurred");
                 }
             },
-            error: function (result) {
+            error: function (xhr, ex) {
                 toggleLoader();
-                popupShow(result.Message)
+                popupShow("Some error occurred");
+                console.log(JSON.parse(xhr.responseText)["Data"]);
             }
         });
     });
@@ -85,3 +87,19 @@ function fnToggleSideBar() {
         $('#socialLinksSideBar').css('display', 'block');
     }
 }
+
+$.fn.serializeObject = function () {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function () {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};

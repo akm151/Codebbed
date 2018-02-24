@@ -19,11 +19,10 @@ namespace Codebbed.Controllers
         {
             return View();
         }
+        [HttpPost]
         public ActionResult SendMail(ContactUs input)
         {
             Result result = new Result();
-            System.Threading.Thread.Sleep(10000);
-
             if (ModelState.IsValid)
             {
 
@@ -41,7 +40,7 @@ namespace Codebbed.Controllers
                 MailAddress cc2 = new MailAddress("pallavibhandari1993@gmail.com");
                 mailMessage.CC.Add(cc1);
                 mailMessage.CC.Add(cc2);
-                mailMessage.Subject = input.Subject;
+                //mailMessage.Subject = input.Subject;
                 mailMessage.Body = body.ToString();
 
                 SmtpClient smtpClient = new SmtpClient();
