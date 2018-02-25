@@ -105,5 +105,9 @@ function adjustMobileHeader() {
 function removeExtraMargin() {
     if ($('button#open-menu').css('display') == 'none') {
         $('#home').removeClass('home-margin-top');
+        $('.navli').removeClass('navli-mobile')
+    }
+    else {
+        $('.navli').addClass('navli-mobile')
     }
 }

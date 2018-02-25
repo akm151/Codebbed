@@ -47,34 +47,8 @@
     <div id="overlay" style="display:none;">
         <i class="fa fa-spinner fa-spin spin-big"></i>
     </div>
-    <!-- Off Canvas Navigation
-    ================================================== -->
-    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-        <!--- Off Canvas Side Menu -->
-        <div class="close" data-toggle="offcanvas" data-target=".navmenu">
-            <span class="fa fa-close"></span>
-        </div>
-        <div class="add-margin"></div>
-        <ul class="nav navmenu-nav">
-            <!--- Menu -->
-            <li><a href="#home" class="page-scroll">Home</a></li>
-            <li><a href="#meet-us" class="page-scroll">Overview</a></li>
-            <li><a href="#services" class="page-scroll">Services</a></li>
-            <li><a href="#works" class="page-scroll">Portfolio</a></li>
-            <li><a href="#about-us" class="page-scroll">About Us</a></li>
-            <li><a href="#contact" class="page-scroll">Contact Us</a></li>
-        </ul><!--- End Menu -->
-    </div> <!--- End Off Canvas Side Menu -->
-    <div id="headLogo" class="container">
-        @*<div class="row text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="section-title">
-                        <h2>Codebbed</h2>
-                        <hr>
-                    </div>
-
-                </div>
-            </div>*@
+   
+    <div id="headLogo" class="container hidden-sm hidden-xs">
         <img src="@Url.Content("~/Resources/img/logoCodebbed.jpg")" class="img-responsive">
     </div>
 
@@ -83,6 +57,8 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+                @*<a class="navbar-brand hidden-md hidden-lg" href="#home"></a>*@
+                <img style="padding: 0;" src="@Url.Content("~/Resources/img/logoCodebbed.jpg")" class="img-responsive navbar-brand hidden-md hidden-lg">
                 <button type="button" id="open-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="adjustMobileHeader()">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>

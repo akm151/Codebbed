@@ -1,675 +1,604 @@
-﻿@*<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <!-- Basic Page Needs
-        ================================================== -->
-        <meta charset="utf-8">
-        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Codebbed</title>
-        <meta name="description" content="Your Description Here">
-        <meta name="keywords" content="free boostrap, bootstrap template, freebies, free theme, free website, free portfolio theme, portfolio, personal, cv">
-        <meta name="author" content="Jenn, ThemeForces.com">
-
-        <!-- Favicons
-        ================================================== -->
-        <link rel="shortcut icon" href="@Url.Content("~/Resources/img/logoFavicon.ico")" type="image/x-icon">
-        <link rel="apple-touch-icon" href="@Url.Content("~/Resources/img/logoFavicon.png")">
-        <link rel="apple-touch-icon" sizes="72x72" href="@Url.Content("~/Resources/img/logoFavicon-72x72.png")">
-        <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/Resources/img/logoFavicon-114x114.png")">
-
-        @* Bundled scripts and css *@
-@*@System.Web.Optimization.Styles.Render("~/bundles/css")
-    @System.Web.Optimization.Scripts.Render("~/bundles/js")*@
-
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-@*</head>*@
-@*<body>
-    <!-- Off Canvas Navigation
-    ================================================== -->
-    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-        <!--- Off Canvas Side Menu -->
-        <div class="close" data-toggle="offcanvas" data-target=".navmenu">
-            <span class="fa fa-close"></span>
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //@Html.Partial("~/Views/Shared/_Layout.cshtml")
+}
+<!-- Home Section -->
+<div id="home">
+    <div class="overlay">
+        <div class="container text-center">
+            <!-- Navigation -->
+            @*<nav id="menu" data-toggle="offcanvas" data-target=".navmenu">
+                    <span class="fa fa-bars"></span>
+                </nav>*@
+            <div class="content">
+                <h4>Our Motto</h4>
+                <hr>
+                <div class="header-text btn">
+                    <h1><span id="head-title"></span></h1>
+                </div>
+            </div>
+            <a href="#whatWeDo" class="down-btn page-scroll">
+                <span class="fa fa-angle-down"></span>
+            </a>
         </div>
-        <div class="add-margin"></div>
-        <ul class="nav navmenu-nav">
-            <!--- Menu -->
-            <li><a href="#home" class="page-scroll">Home</a></li>
-            <li><a href="#meet-us" class="page-scroll">Overview</a></li>
-            <li><a href="#services" class="page-scroll">Services</a></li>
-            <li><a href="#works" class="page-scroll">Portfolio</a></li>
-            <li><a href="#about-us" class="page-scroll">About Us</a></li>
-            <li><a href="#contact" class="page-scroll">Contact Us</a></li>
-        </ul><!--- End Menu -->
-    </div> <!--- End Off Canvas Side Menu -->
-    <div class="container" style="height:200px">
-        @*<div class="row text-center">
+    </div>
+</div>
+<!-- What we do Section -->
+<div id="whatWeDo" class="container text-center">
+    <div class="space"></div>
+    <h2>What we do</h2>
+    <hr>
+    Our philosophy is to find intelligent solutions and deliver using an iterative loop of brainstorming, discover,define,design,build,deliver.
+    Working alongside our clients, we aim to build our web from the strands of customer satisfaction, user experience, rigrous improvement surpassing our own boundaries.
+    We aim to place our client's customers at the heart of the user experience.
+</div>
+<div class="space"></div>
+<div class="space"></div>
+
+<div id="howwework">
+    <div class="overlay">
+        <div class="container  text-center">
+            <div class="section-title">
+                <h2>How we work</h2>
+                <hr>
+
+            </div>
+            <div class="testimonial owl-carousel owl-theme">
+                <div class="item">
+                    <img src="@Url.Content("~/Resources/img/How we work/research3.jpg")" class="img-responsive" alt="...">
+                    <div class="phases">Brainstorming</div>
+                </div>
+                <div class="item">
+                    <img src="@Url.Content("~/Resources/img/How we work/sitemap.jpg")" class="img-responsive" alt="...">
+                    <div class="phases">Define And Design</div>
+                </div>
+                <div class="item">
+                    <img src="@Url.Content("~/Resources/img/How we work/prototyp3.jpeg")" class="img-responsive" alt="...">
+                    <div class="phases">Prototype</div>
+
+                </div>
+                <div class="item">
+                    <img src="@Url.Content("~/Resources/img/How we work/BuilandDeliver.png")" class="img-responsive" alt="...">
+                    <div class="phases">Build And Deliver</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Overview Video Section -->
+@*<div id="overview-video">
+        <div class="overlay">
+            <div class="container">
+                <a href="#">
+                    <span class="fa fa-play"></span>
+                </a>
+            </div>
+        </div>
+    </div>*@
+<!-- Services Section -->
+<div id="services">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="section-title">
+                    <h2>Services</h2>
+                    <hr>
+                </div>
+                @* <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>*@
+            </div>
+        </div>
+        @*<div class="space"></div>*@
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="service">
+                    <span class="fa fa-book fa-3x"></span>
+                    <h4>Content Writing</h4>
+                    <p>
+                        We specialize in providing the relevant content keeping in mind the target audience, our clients expectations
+                        aimed at improving a website's SEO.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="service">
+                    <span class="fa fa-bicycle fa-3x"></span>
+                    <h4>Web Development</h4>
+                    <p>
+                        Using our skills in front end and back end development we are good and getting better in developing websites
+                        that are functional and presentable.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="service">
+                    <span class="fa fa-plug fa-3x"></span>
+                    <h4>App Development</h4>
+                    <p>We build mobile apps for Android, using a methodology that integrates web technologies and native app development. </p>
+                </div>
+            </div>
+        </div>
+        <a href="#works" class="down-btn page-scroll">
+            <span class="fa fa-angle-down"></span>
+        </a>
+    </div>
+</div>
+<!-- Call-to-Action Section -->
+@*<div id="cta">
+        <div class="container text-center">
+            <a href="#" class="btn go-to-btn">About us</a>
+        </div>
+    </div>*@
+<div id="ourProjects">
+    <div class="overlay">
+        <div class="container  text-center">
+            <div class="section-title">
+                <h2>Our Projects</h2>
+                <hr>
+            </div>
+            <div class="testimonial owl-carousel owl-theme">
+                <div class="item">
+                    <img src="@Url.Content("~/Resources/img/portfolio/01.png")" class="img-responsive" alt="...">
+                </div>
+                <div class="item">
+                    <img src="@Url.Content("~/Resources/img/portfolio/02.png")" class="img-responsive" alt="...">
+
+                </div>
+                <div class="item">
+                    <img src="@Url.Content("~/Resources/img/portfolio/03.png")" class="img-responsive" alt="...">
+
+
+                </div>
+                <div class="item">
+                    <div class="col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
+                        <img src="@Url.Content("~/Resources/img/portfolio/04.png")" class="img-responsive" alt="...">
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <img src="@Url.Content("~/Resources/img/portfolio/05.png")" class="img-responsive" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Section -->
+<div id="works">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="section-title">
+                    <h2>Our Expertise</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Logo Design</h5>
+                                        <p class="lead">Client Seal</p>
+                                        <div class="hline"></div>*@
+                                </div>
+
+                                @*<img src="@Url.Content("~/Resources/img/portfolio/01.jpg")" class="img-responsive" alt="...">*@
+                                <img src="@Url.Content("~/Resources/img/Techs/csharp.png")" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Stationery</h5>
+                                        <p class="lead">Design Project</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                                @*<img src="@Url.Content("~/Resources/img/portfolio/02.jpg")" class="img-responsive" alt="...">*@
+                                <img src="@Url.Content("~/Resources/img/Techs/sql.png")" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Branding</h5>
+                                        <p class="lead">Metalbrand</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/03.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/django.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Business Card</h5>
+                                        <p class="lead">Clothing Line</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/JS.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Business Card</h5>
+                                        <p class="lead">Clothing Line</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/html.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Business Card</h5>
+                                        <p class="lead">Clothing Line</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/angular.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Business Card</h5>
+                                        <p class="lead">Clothing Line</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/typescript.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Business Card</h5>
+                                        <p class="lead">Clothing Line</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/mvc.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Business Card</h5>
+                                        <p class="lead">Clothing Line</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/python.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Business Card</h5>
+                                        <p class="lead">Clothing Line</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/jquery.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Branding</h5>
+                                        <p class="lead">Metalbrand</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/03.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/flask.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="">
+                                <div class="hover-text">
+                                    @*<h5>Branding</h5>
+                                        <p class="lead">Metalbrand</p>
+                                        <div class="hline"></div>*@
+                                </div>
+                            </a>
+                            @*<img src="@Url.Content("~/Resources/img/portfolio/03.jpg")" class="img-responsive" alt="...">*@
+                            <img src="@Url.Content("~/Resources/img/Techs/bootstrap.png")" class="img-responsive" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="text-center">
+        @*<a href="#" class="btn read-more-btn">Check on Dribbble</a>*@
+        <br>
+        <a href="#about-us" class="down-btn page-scroll"><span class="fa fa-angle-down"></span></a>
+    </div>
+</div>
+<!-- Clients Section -->
+@*<div id="clients">
+        <div class="overlay">
+            <div class="container text-center">
+                <div class="section-title">
+                    <h2>Our Partners</h2>
+                    <hr>
+                </div>
+                <ul class="clients">
+                    <li><a href="#"><img src="@Url.Content("~/Resources/img/clients/01.png")" class="img-responsive" alt="..."></a></li>
+                    <li><a href="#"><img src="@Url.Content("~/Resources/img/clients/02.png")" class="img-responsive" alt="..."></a></li>
+                    <li><a href="#"><img src="@Url.Content("~/Resources/img/clients/03.png")" class="img-responsive" alt="..."></a></li>
+                    <li><a href="#"><img src="@Url.Content("~/Resources/img/clients/04.png")" class="img-responsive" alt="..."></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>*@
+<!-- About Us Section -->
+<div id="about-us">
+    <div class="overlay">
+        <div class="container">
+            <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="section-title">
-                        <h2>Codebbed</h2>
+                        <h2>About Us</h2>
                         <hr>
                     </div>
-
+                    <p>
+                        We are tech enthusiasts, with a knack of learning while exploring and also earning while at it.
+                        We create, innovate, design, code and deliver solutions best suited for your businesses. we love taking up challenges and also see through them to unroll our potential.
+                    </p>
                 </div>
-            </div>*@@*
-        <@*img src="@Url.Content("~/Resources/img/logoCodebbed.jpg")">
-    </div>
-    <!-- Header Setion-->
-    <div class="navbar">
-        <ul id="menu" class="nav clients text-center">
-            <li id="liHome" class="navli"><a href="">Home</a></li>
-            <li id="liAboutUs" class="navli"><a href="">About Us</a></li>
-            <li id="liContactUs" class="navli"><a href="">Contact Us</a></li>
-            <li id="liServices" class="navli"><a href="">Our Services</a></li>
-        </ul>
-    </div>*@
-
-            @{
-                Layout = "~/Views/Shared/_Layout.cshtml";
-                //@Html.Partial("~/Views/Shared/_Layout.cshtml")
-            }
-            <!-- Home Section -->
-            <div id="home">
-                <div class="overlay">
-                    <div class="container text-center">
-                        <!-- Navigation -->
-                        @*<nav id="menu" data-toggle="offcanvas" data-target=".navmenu">
-                                <span class="fa fa-bars"></span>
-                            </nav>*@
-                        <div class="content">
-                            <h4>Our Motto</h4>
-                            <hr>
-                            <div class="header-text btn">
-                                <h1><span id="head-title"></span></h1>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team">
+                                <img src="@Url.Content("~/Resources/img/team/02.jpg")" class="img-responsive img-circle" alt="...">
+                                <br>
+                                <h4>Aman Kumar</h4>
+                                <p class="small">
+                                    <a href="https://twitter.com/amankr31?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow</a>
+                                    <br />
+                                    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/aman-kumar-603a02a0/" data-format="hover" data-related="false" data-text="Aman Kumar">
+                                    </script>
+                                </p>
+                                <hr>
                             </div>
                         </div>
-                        <a href="#whatWeDo" class="down-btn page-scroll">
-                            <span class="fa fa-angle-down"></span>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team">
+                                <img src="@Url.Content("~/Resources/img/team/04.jpg")" class="img-responsive img-circle" alt="...">
+                                <br>
+                                <h4>Pallavi Bhandari</h4>
+                                <p class="small">
+                                    <a href="https://twitter.com/Pallavi_270293?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow</a>
+                                    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/pallavi-bhandari-11557ba4/" data-format="hover" data-related="false" data-text="Pallavi Bhandari">
+                                    </script>
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team">
+                                <img src="@Url.Content("~/Resources/img/team/03.jpg")" class="img-responsive img-circle" alt="...">
+                                <br>
+                                <h4>Saumya Saxena</h4>
+                                <p class="small">
+                                    <a href="https://twitter.com/SaumyaSaxena318?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow</a>
+                                    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/saumya-saxena-310893" data-format="hover" data-related="false" data-text="Saumya Saxena">
+                                    </script>
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*<div class="col-md-2 col-sm-2">
+                    <div class="team hire">
+                        <h4>We Are Hiring!</h4>
+                        <hr>
+                        <div class="space"></div>
+                        <a href="#">
+                            <span class="fa fa-paper-plane-o fa-2x"></span>
                         </a>
                     </div>
-                </div>
-            </div>
-            <!-- What we do Section -->
-            <div id="whatWeDo"class="container text-center">
-                <div class="space"></div>
-                <h2>What we do</h2>
-                <hr>
-                Our philosophy is to find intelligent solutions and deliver using an iterative loop of brainstorming, discover,define,design,build,deliver.
-                Working alongside our clients, we aim to build our web from the strands of customer satisfaction, user experience, rigrous improvement surpassing our own boundaries.
-                We aim to place our client's customers at the heart of the user experience.
-            </div>
-            <div class="space"></div>
-            <div class="space"></div>
-
-            <div id="howwework">
-                <div class="overlay">
-                    <div class="container  text-center">
-                        <div class="section-title">
-                            <h2>How we work</h2>
-                            <hr>
-
-                        </div>
-                        <div class="testimonial owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="@Url.Content("~/Resources/img/How we work/research3.jpg")" class="img-responsive" alt="...">
-                                <div class="phases">Brainstorming</div>
-                            </div>
-                            <div class="item">
-                                <img src="@Url.Content("~/Resources/img/How we work/sitemap.jpg")" class="img-responsive" alt="...">
-                                <div class="phases">Define And Design</div>
-                            </div>
-                            <div class="item">
-                                <img src="@Url.Content("~/Resources/img/How we work/prototyp3.jpeg")" class="img-responsive" alt="...">
-                                <div class="phases">Prototype</div>
-
-                            </div>
-                            <div class="item">
-                                <img src="@Url.Content("~/Resources/img/How we work/BuilandDeliver.png")" class="img-responsive" alt="...">
-                                <div class="phases">Build And Deliver</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- Overview Video Section -->
-            @*<div id="overview-video">
-                    <div class="overlay">
-                        <div class="container">
-                            <a href="#">
-                                <span class="fa fa-play"></span>
-                            </a>
-                        </div>
-                    </div>
                 </div>*@
-            <!-- Services Section -->
-            <div id="services">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="section-title">
-                                <h2>Services</h2>
-                                <hr>
-                            </div>
-                            @* <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>*@
-                        </div>
-                    </div>
-                    @*<div class="space"></div>*@
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="service">
-                                <span class="fa fa-book fa-3x"></span>
-                                <h4>Content Writing</h4>
-                                <p>We specialize in providing the relevant content keeping in mind the target audience, our clients expectations 
-                                aimed at improving a website's SEO. </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="service">
-                                <span class="fa fa-bicycle fa-3x"></span>
-                                <h4>Web Development</h4>
-                                <p>
-                                    Using our skills in front end and back end development we are good and getting better in developing websites
-                                    that are functional and presentable.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="service">
-                                <span class="fa fa-plug fa-3x"></span>
-                                <h4>App Development</h4>
-                                <p>We build mobile apps for Android, using a methodology that integrates web technologies and native app development. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#works" class="down-btn page-scroll">
-                        <span class="fa fa-angle-down"></span>
-                    </a>
+        </div>
+        <div class="text-center">
+            <a href="#contact" class="page-scroll down-btn">
+                <span class="fa fa-angle-down"></span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Testimonial Section -->
+@*<div id="testimonials">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What my Clients Say...</h2>
+                    <hr>
                 </div>
-            </div>
-            <!-- Call-to-Action Section -->
-            @*<div id="cta">
-                    <div class="container text-center">
-                        <a href="#" class="btn go-to-btn">About us</a>
+                <div id="testimonial" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <h3>Et iusto odio dignissimos ducimus qui blanditiis <br>praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <br>occaecati cupiditate non provident. </h3>
+                        <br>
+                        <h6>LJ, Abc Company</h6>
                     </div>
-                </div>*@
-            <div id="ourProjects">
-                <div class="overlay">
-                    <div class="container  text-center">
-                        <div class="section-title">
-                            <h2>Our Projects</h2>
-                            <hr>
-                        </div>
-                        <div class="testimonial owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="@Url.Content("~/Resources/img/portfolio/01.png")" class="img-responsive" alt="...">
-                            </div>
-                            <div class="item">
-                                <img src="@Url.Content("~/Resources/img/portfolio/02.png")" class="img-responsive" alt="...">
-
-                            </div>
-                            <div class="item">
-                                <img src="@Url.Content("~/Resources/img/portfolio/03.png")" class="img-responsive" alt="...">
-
-
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
-                                    <img src="@Url.Content("~/Resources/img/portfolio/04.png")" class="img-responsive" alt="...">
-                                </div>
-                                <div class="col-md-4 col-xs-4">
-                                    <img src="@Url.Content("~/Resources/img/portfolio/05.png")" class="img-responsive" alt="...">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="item">
+                        <h3>Fusce dapibus, tellus ac cursus commodo, tortor<br> mauris condimentum. Duis mollis, est non commodo luctus, nisi erat </h3>
+                        <br>
+                        <h6>Kai, Web Geekster</h6>
+                    </div>
+                    <div class="item">
+                        <h3>Cras justo odio, dapibus ac facilisis in, egestas <br>eget quam. Donec id elit non mi porta gravida at eget metus.</h3>
+                        <br>
+                        <h6>Jenn, Coders' Playground</h6>
                     </div>
                 </div>
-            </div>
-
-            <!-- Portfolio Section -->
-            <div id="works">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="section-title">
-                                <h2>Our Expertise</h2>
-                                <hr>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="space"></div>
-                </div>
-                <div class="container-fluid">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div  class="hover-text">
-                                                @*<h5>Logo Design</h5>
-                                                    <p class="lead">Client Seal</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                           
-                                            @*<img src="@Url.Content("~/Resources/img/portfolio/01.jpg")" class="img-responsive" alt="...">*@
-                                            <img  src="@Url.Content("~/Resources/img/Techs/csharp.png")" class="img-responsive" alt="...">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Stationery</h5>
-                                                    <p class="lead">Design Project</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                            @*<img src="@Url.Content("~/Resources/img/portfolio/02.jpg")" class="img-responsive" alt="...">*@
-                                            <img src="@Url.Content("~/Resources/img/Techs/sql.png")" class="img-responsive" alt="...">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Branding</h5>
-                                                    <p class="lead">Metalbrand</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/03.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/django.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Business Card</h5>
-                                                    <p class="lead">Clothing Line</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/JS.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Business Card</h5>
-                                                    <p class="lead">Clothing Line</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/html.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Business Card</h5>
-                                                    <p class="lead">Clothing Line</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/angular.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Business Card</h5>
-                                                    <p class="lead">Clothing Line</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/typescript.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Business Card</h5>
-                                                    <p class="lead">Clothing Line</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/mvc.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Business Card</h5>
-                                                    <p class="lead">Clothing Line</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/python.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Business Card</h5>
-                                                    <p class="lead">Clothing Line</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/04.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/jquery.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Branding</h5>
-                                                    <p class="lead">Metalbrand</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/03.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/flask.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-2 col-xs-4 nopadding">
-                                <div class="portfolio-item">
-                                    <div class="hover-bg">
-                                        <a href="">
-                                            <div class="hover-text">
-                                                @*<h5>Branding</h5>
-                                                    <p class="lead">Metalbrand</p>
-                                                    <div class="hline"></div>*@
-                                            </div>
-                                        </a>
-                                        @*<img src="@Url.Content("~/Resources/img/portfolio/03.jpg")" class="img-responsive" alt="...">*@
-                                        <img src="@Url.Content("~/Resources/img/Techs/bootstrap.png")" class="img-responsive" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="space"></div>
-                <div class="text-center">
-                    @*<a href="#" class="btn read-more-btn">Check on Dribbble</a>*@
-                    <br>
-                    <a href="#about-us" class="down-btn page-scroll"><span class="fa fa-angle-down"></span></a>
-                </div>
-            </div>
-            <!-- Clients Section -->
-            @*<div id="clients">
-                <div class="overlay">
-                    <div class="container text-center">
-                        <div class="section-title">
-                            <h2>Our Partners</h2>
-                            <hr>
-                        </div>
-                        <ul class="clients">
-                            <li><a href="#"><img src="@Url.Content("~/Resources/img/clients/01.png")" class="img-responsive" alt="..."></a></li>
-                            <li><a href="#"><img src="@Url.Content("~/Resources/img/clients/02.png")" class="img-responsive" alt="..."></a></li>
-                            <li><a href="#"><img src="@Url.Content("~/Resources/img/clients/03.png")" class="img-responsive" alt="..."></a></li>
-                            <li><a href="#"><img src="@Url.Content("~/Resources/img/clients/04.png")" class="img-responsive" alt="..."></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>*@
-            <!-- About Us Section -->
-            <div id="about-us">
-                <div class="overlay">
-                    <div class="container">
-                        <div class="row text-center">
-                            <div class="col-md-8 col-md-offset-2">
-                                <div class="section-title">
-                                    <h2>About Us</h2>
-                                    <hr>
-                                </div>
-                                <p>
-                                    We are tech enthusiasts, with a knack of learning while exploring and also earning while at it.
-                                    We create, innovate, design, code and deliver solutions best suited for your businesses. we love taking up challenges and also see through them to unroll our potential.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="space"></div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="team">
-                                            <img src="@Url.Content("~/Resources/img/team/02.jpg")" class="img-responsive img-circle" alt="...">
-                                            <br>
-                                            <h4>Aman Kumar</h4>
-                                            <p class="small">
-                                                <a href="https://twitter.com/amankr31?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow</a>
-                                                <br />
-                                                <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/aman-kumar-603a02a0/" data-format="hover" data-related="false" data-text="Aman Kumar">
-                                                </script>
-                                            </p>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="team">
-                                            <img src="@Url.Content("~/Resources/img/team/04.jpg")" class="img-responsive img-circle" alt="...">
-                                            <br>
-                                            <h4>Pallavi Bhandari</h4>
-                                            <p class="small">
-                                                <a href="https://twitter.com/Pallavi_270293?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow</a>
-                                                <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/pallavi-bhandari-11557ba4/" data-format="hover" data-related="false" data-text="Pallavi Bhandari">
-                                                </script>
-                                            </p>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="team">
-                                            <img src="@Url.Content("~/Resources/img/team/03.jpg")" class="img-responsive img-circle" alt="...">
-                                            <br>
-                                            <h4>Saumya Saxena</h4>
-                                            <p class="small">
-                                                <a href="https://twitter.com/SaumyaSaxena318?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow</a>
-                                                <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/saumya-saxena-310893" data-format="hover" data-related="false" data-text="Saumya Saxena">
-                                                </script>
-                                            </p>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            @*<div class="col-md-2 col-sm-2">
-                        <div class="team hire">
-                            <h4>We Are Hiring!</h4>
-                            <hr>
-                            <div class="space"></div>
-                            <a href="#">
-                                <span class="fa fa-paper-plane-o fa-2x"></span>
-                            </a>
-                        </div>
-                    </div>*@
-                        </div>
-                        <div class="text-center">
-                            <a href="#contact" class="page-scroll down-btn">
-                                <span class="fa fa-angle-down"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimonial Section -->
-                @*<div id="testimonials">
-            <div class="overlay">
-                <div class="container">
-                    <div class="section-title">
-                        <h2>What my Clients Say...</h2>
-                        <hr>
-                    </div>
-                    <div id="testimonial" class="owl-carousel owl-theme">
-                        <div class="item">
-                            <h3>Et iusto odio dignissimos ducimus qui blanditiis <br>praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <br>occaecati cupiditate non provident. </h3>
-                            <br>
-                            <h6>LJ, Abc Company</h6>
-                        </div>
-                        <div class="item">
-                            <h3>Fusce dapibus, tellus ac cursus commodo, tortor<br> mauris condimentum. Duis mollis, est non commodo luctus, nisi erat </h3>
-                            <br>
-                            <h6>Kai, Web Geekster</h6>
-                        </div>
-                        <div class="item">
-                            <h3>Cras justo odio, dapibus ac facilisis in, egestas <br>eget quam. Donec id elit non mi porta gravida at eget metus.</h3>
-                            <br>
-                            <h6>Jenn, Coders' Playground</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
-                <!-- Contact Section -->
-                <div id="contact">
-                    <div class="container">
-                        <div class="section-title text-center">
-                            <h2>Contact Us</h2>
-                            <hr>
-                        </div>
-                        <div class="space"></div>
-                        <div class="row">
-                            @*<div class="col-md-3">
-                        <address>
-                            <strong>Address</strong><br>
-                            <br>
-                            ThemeForces.Com<br>
-                            Igbalangao, Bugasong, Anitque<br>
-                            5704, Philippines<br>
-                            Phone: (123) 456-7890
-                            <ul class="social">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
-                            </ul>
-                        </address>
-                    </div>*@
-                            <div class="col-md-12">
-                                <form name="contactUsForm" autocomplete="off">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <input name="Name" id="txtName" type="text" class="form-control" placeholder="Your Name">
-                                            
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input name="Email" id="txtEmailID" type="text" class="form-control" placeholder="Email">
-                                        </div>
-
-                                        <div class="col-md-6">                                            
-                                            <input name="PhoneNo" id="txtPhoneNo" type="text" class="form-control" placeholder="Phone No.">
-                                        </div>
-                                    </div>
-                                    <textarea name="Message" id="txtMessage" class="form-control" rows="4" placeholder="Message"></textarea>
-                                    <div class="text-right">
-                                        <a id="btnSendMail" class="btn send-btn">Send</a>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                @*added for mail:start*@
-                <div class="modal fade" id="popup" role="dialog">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Message</h4>
-
-                            </div>
-                            <div class="modal-body">
-                                <p id="message"></p>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                @*added for mail:end*@
-                <!--<nav id="footer">
-        <div class="container">
-            <div class="socialLinks">
-                @*Adding social network links*@
-                <h2>Connect with us!</h2>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/codebbed?ref_src=twsrc%5Etfw" target="_blank" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-            <div class="pull-right">
-                <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
             </div>
         </div>
-        <!--<div class="stickySocialBottom">
-            <div class="socialLinks">
-                @*Adding social network links*@
-                @*<h2>Style Social Media Buttons</h2>*@
-                 Add font awesome icons
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-            @*<div class="pull-right">
-                    <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
+    </div>*@
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Contact Us</h2>
+            <hr>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+            @*<div class="col-md-3">
+                    <address>
+                        <strong>Address</strong><br>
+                        <br>
+                        ThemeForces.Com<br>
+                        Igbalangao, Bugasong, Anitque<br>
+                        5704, Philippines<br>
+                        Phone: (123) 456-7890
+                        <ul class="social">
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </address>
                 </div>*@
-        </div>-->
-                @*</nav>
+            <div class="col-md-12">
+                <form name="contactUsForm" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input name="Name" id="txtName" type="text" class="form-control" placeholder="Your Name">
 
-                </body>
-                </html*@
+                        </div>
+                        <div class="col-md-6">
+                            <input name="Email" id="txtEmailID" type="text" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input name="PhoneNo" id="txtPhoneNo" type="text" class="form-control" placeholder="Phone No.">
+                        </div>
+                    </div>
+                    <textarea name="Message" id="txtMessage" class="form-control" rows="4" placeholder="Message"></textarea>
+                    <div class="text-right">
+                        <a id="btnSendMail" class="btn send-btn">Send</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@*added for mail:start*@
+<div class="modal fade" id="popup" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Message</h4>
+
+            </div>
+            <div class="modal-body">
+                <p id="message"></p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@*added for mail:end*@
+<!--<nav id="footer">
+<div class="container">
+    <div class="socialLinks">
+        @*Adding social network links*@
+        <h2>Connect with us!</h2>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/codebbed?ref_src=twsrc%5Etfw" target="_blank" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+    <div class="pull-right">
+        <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
+    </div>
+</div>
+<!--<div class="stickySocialBottom">
+    <div class="socialLinks">
+        @*Adding social network links*@
+        @*<h2>Style Social Media Buttons</h2>*@
+         Add font awesome icons
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+    @*<div class="pull-right">
+            <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
+        </div>*@
+</div>-->
+@*</nav>
+
+    </body>
+    </html*@

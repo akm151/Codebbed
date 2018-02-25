@@ -956,10 +956,15 @@ nav#footer .socialLinks {
 }
 
 .home-margin-top {
-    margin-top: 200px;
+    margin-top: 220px;
 }
 
 #stickyHead .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
+}
+
+.navli-mobile{
+    border-bottom: 1px solid #efefef;
+    width: 110%;
 }
