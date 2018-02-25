@@ -932,9 +932,9 @@ nav#footer .socialLinks {
         height: 431px;
     }
 
-#headLogo {
+/*#headLogo {
     height: 150px;
-}
+}*/
 
 #toggleSideBar {
     background-color: white;
@@ -946,11 +946,20 @@ nav#footer .socialLinks {
     display: inline-block;
 }
 
-.nav > li > a {
+/*.nav > li > a {
     padding: 2% 2%;
-}
+}*/
 
 .navbar-default {
     background-color: white;
     border: none;
+}
+
+.home-margin-top {
+    margin-top: 200px;
+}
+
+#stickyHead .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
 }

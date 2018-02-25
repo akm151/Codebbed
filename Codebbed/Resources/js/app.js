@@ -20,7 +20,7 @@ $(function () {
             success: function (result) {
                 toggleLoader();
                 if (result && result.Message) {
-                        popupShow(result.Message)
+                    popupShow(result.Message)
                 } else {
                     popupShow("Some error occurred");
                 }
@@ -68,17 +68,6 @@ function toggleLoader() {
 }
 
 function fnToggleSideBar() {
-    //debugger;
-    //if ($('#toggleSideBar').hasClass('fa fa-angle-double-left')) {
-    //    $('#toggleSideBar').removeClass('fa fa-angle-double-left');
-    //    $('#toggleSideBar').addClass('fa fa-angle-double-right');
-    //    $('#socialLinksSideBar').css('display', 'none');
-    //}
-    //else {
-    //    $('#toggleSideBar').removeClass('fa fa-angle-double-right');
-    //    $('#toggleSideBar').addClass('fa fa-angle-double-left');
-    //    $('#socialLinksSideBar').css('display', 'block');
-    //}
     if ($('#socialLinksSideBar').css('display') == 'block') {
         $('#socialLinksSideBar').css('display', 'none');
     }
@@ -103,3 +92,18 @@ $.fn.serializeObject = function () {
     });
     return o;
 };
+
+function adjustMobileHeader() {
+    if ($('#home').hasClass('home-margin-top')) {
+        $('#home').removeClass('home-margin-top');
+    }
+    else {
+        $('#home').addClass('home-margin-top');
+    }
+}
+
+function removeExtraMargin() {
+    if ($('button#open-menu').css('display') == 'none') {
+        $('#home').removeClass('home-margin-top');
+    }
+}
