@@ -1,0 +1,55 @@
+﻿#popup, #message {
+    color: black;
+}
+
+.modal-open {
+    padding-right: 0px !important;
+}
+
+section {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+#overlay {
+    display: table;
+    background: rgba(50,50,50,0.5);
+    z-index: 30000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+    #overlay i {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+.spin-big {
+    font-size: 50px !important;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.spin-normal {
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+.spin-small {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.hide-scroll{
+    overflow-y:hidden;
+}

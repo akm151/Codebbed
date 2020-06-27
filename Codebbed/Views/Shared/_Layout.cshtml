@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codebbed</title>
+    <meta name="description" content="Your Description Here">
+    <meta name="keywords" content="free boostrap, bootstrap template, freebies, free theme, free website, free portfolio theme, portfolio, personal, cv">
+    <meta name="author" content="Jenn, ThemeForces.com">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="@Url.Content("~/Resources/img/logoFavicon.ico")" type="image/x-icon">
+    <link rel="apple-touch-icon" href="@Url.Content("~/Resources/img/logoFavicon.png")">
+    <link rel="apple-touch-icon" sizes="72x72" href="@Url.Content("~/Resources/img/logoFavicon-72x72.png")">
+    <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/Resources/img/logoFavicon-114x114.png")">
+
+    @* Bundled scripts and css *@
+    @System.Web.Optimization.Styles.Render("~/bundles/css")
+    @System.Web.Optimization.Scripts.Render("~/bundles/js")
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        window.onscroll = function () {
+            var sticky = $('#stickyHead')[0].offsetTop;
+            if (window.pageYOffset > sticky) {
+                $('#stickyHead').addClass("navbar-fixed-top");
+                $('#stickyHead').css("background-color", "#EFEFEF");
+            } else {
+                $('#stickyHead').removeClass("navbar-fixed-top");
+                $('#stickyHead').css("background-color", "white");
+            }
+        };
+    </script>
+</head>
+<body onresize="removeExtraMargin()">
+    @* Loader *@
+    <div id="overlay" style="display:none;">
+        <i class="fa fa-spinner fa-spin spin-big"></i>
+    </div>
+   
+    <div id="headLogo" class="container hidden-sm hidden-xs">
+        <img src="@Url.Content("~/Resources/img/logoCodebbed.jpg")" class="img-responsive">
+    </div>
+
+
+    <nav id="stickyHead" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                @*<a class="navbar-brand hidden-md hidden-lg" href="#home"></a>*@
+                <img style="padding: 0;" src="@Url.Content("~/Resources/img/logoCodebbed.jpg")" class="img-responsive navbar-brand hidden-md hidden-lg">
+                <button type="button" id="open-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="adjustMobileHeader()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: white;">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <ul id="menu" class="col-md-12 col-xs-12 nav navbar-nav clients text-center">
+                            <li id="liHome" class="col-md-3 col-xs-12 navli"><a href="#">Home</a></li>
+                            <li id="liServices" class="col-md-3 col-xs-12 navli"><a href="#services">Services</a></li>
+                            <li id="liAboutUs" class="col-md-3 col-xs-12 navli"><a href="#about-us">About us</a></li>
+                            <li id="liContactUs" class="col-md-3 col-xs-12 navli"><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="stickySocial">
+        <i id="toggleSideBar" class="fa fa-share-alt" onclick="fnToggleSideBar()"></i>
+        <div class="socialLinks" id="socialLinksSideBar" style="display:none">
+            @*Adding social network links*@
+            @*<h2>Style Social Media Buttons</h2>*@
+            <ul>
+                <li><a href="#" class="fa fa-facebook" onclick="fnFacebookClick()"></a></li>
+                <li><a href="https://twitter.com/intent/tweet?text=Hi!%20Check%20this%20out!%20&url=https://twitter.com/codebbed&hashtags=codebbed&via=codebbed&mini=true" class="fa fa-twitter"></a></li>
+                <li>
+                    <a href="https://plus.google.com/share?url={http://codebbed.com}" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="fa fa-google-plus"></a>
+                </li>
+                <li><a href="#" onclick="fnLinkedClick()" class="fa fa-linkedin"></a></li>
+                <li><a href="mailto:?subject=Codebbed | &body=Hi, %0A%0ACheck this out! %0A%0A www.codebbed.com" class="fa fa-envelope" onclick=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <nav id="footer">
+        <div class="container">
+            <div class="socialLinks">
+                @*Adding social network links*@
+                <h2>Connect with us!</h2>
+                <a href="https://www.facebook.com/Codebbed-849208365280211/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/codebbed/" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://plus.google.com/109815279646865138652" target="_blank" class="fa fa-google-plus"></a>
+                <a href="https://www.linkedin.com/company/codebbed/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="mailto:codebbed@gmail.com?subject=Codebbed" class="fa fa-envelope" onclick=""></a>
+            </div>
+        </div>
+
+        <!--<div class
+            </div>
+
+        <!--<div class="stickySocialBottom">
+            <div class="socialLinks">
+                @*Adding social network links*@
+                @*<h2>Style Social Media Buttons</h2>*@
+                 Add font awesome icons
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            @*<div class="pull-right">
+                    <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
+                </div>*@
+        </div>-->
+    </nav>
+
+</body>
+</html>
+
+
+
+
+
+
